@@ -7,6 +7,8 @@ import { schema } from './schema';
 const app = new express();
 const PORT = 4300;
 
+require('./database/setup');
+
 app.use(
   '/graphql',
   bodyParser.json(),

@@ -7,3 +7,7 @@ type Query{
   allClients: [Client!]
   getCart(id: ID!): Cart
 }
+
+type Mutation{
+  createClient(name: String!, age: Int!): Client
+}
