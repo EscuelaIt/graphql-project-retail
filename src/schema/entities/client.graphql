@@ -3,3 +3,8 @@ type Client{
   name: String!
   age: Int
 }
+
+input newClient{
+  name: String!
+  age: Int!
+}
