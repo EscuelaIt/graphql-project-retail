@@ -1,0 +1,6 @@
+type Product{
+  id: ID!
+  cant: Int!
+  name: String!
+  text: String
+}

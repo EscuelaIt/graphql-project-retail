@@ -1,0 +1,8 @@
+# import Client from "./client.graphql"
+# import Product from "./product.graphql"
+
+type Cart{
+  id: ID!
+  client: Client!
+  products: [Product!]
+}

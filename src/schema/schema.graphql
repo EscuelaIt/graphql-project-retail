@@ -1,0 +1,9 @@
+# import Product from "./entities/product.graphql"
+# import Client from "./entities/client.graphql"
+# import Cart from "./entities/cart.graphql"
+
+type Query{
+  allProducts: [Product!]
+  allClients: [Client!]
+  getCart(id: ID!): Cart
+}
