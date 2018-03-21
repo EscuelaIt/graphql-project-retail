@@ -5,4 +5,5 @@ type Cart{
   id: ID!
   client: Client!
   products: [Product!]
+  total: Int
 }
