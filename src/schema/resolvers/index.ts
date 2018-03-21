@@ -8,6 +8,7 @@ import { getCart } from './cart/getCart';
 import { allCarts } from './cart/allCarts';
 
 import { allComments } from './comment/allComments';
+import { allTasks } from './tasks/allTasks';
 
 
 export const resolvers = {
@@ -17,7 +18,8 @@ export const resolvers = {
     getCart,
     getClient,
     allCarts,
-    allComments
+    allComments,
+    allTasks
   },
   Mutation: {
     createClient,

@@ -2,6 +2,7 @@ import * as express from "express";
 import * as bodyParser from "body-parser";
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
 import {MongoClient, ObjectId} from 'mongodb';
+import * as cors from "cors";
 
 import { schema } from './schema';
 
@@ -19,6 +20,7 @@ const PORT = 4300;
 
 require('./database/setup');
 
+app.use(cors());
 app.use(
   '/graphql',
   bodyParser.json(),
