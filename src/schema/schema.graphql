@@ -2,7 +2,7 @@
 # import Client, newClient from "./entities/client.graphql"
 # import Cart from "./entities/cart.graphql"
 # import Comment from "./entities/comment.graphql"
-# import Task from "./entities/task.graphql"
+# import Task, newTask from "./entities/task.graphql"
 
 type Query{
   allProducts: [Product!]
@@ -12,9 +12,13 @@ type Query{
   allCarts: [Cart!]
   allComments: [Comment!]
   allTasks: [Task!]
+  getTask(id: ID!): Task
 }
 
 type Mutation{
   createClient(client: newClient!): Client
   deleteClient(id: ID!): ID
+  createTask(task: newTask!): Task
+  updateTask(id: ID!, task: newTask!): Task
+  deleteTask(id: ID!): ID
 }

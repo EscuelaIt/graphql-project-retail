@@ -3,3 +3,8 @@ type Task{
   text: String!
   completed: Boolean!
 }
+
+input newTask{
+  text: String!
+  completed: Boolean!
+}

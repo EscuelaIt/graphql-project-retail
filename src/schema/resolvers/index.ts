@@ -9,6 +9,10 @@ import { allCarts } from './cart/allCarts';
 
 import { allComments } from './comment/allComments';
 import { allTasks } from './tasks/allTasks';
+import { getTask } from './tasks/getTask';
+import { createTask } from './tasks/createTask';
+import { deleteTask } from './tasks/deleteTask';
+import { updateTask } from './tasks/updateTask';
 
 
 export const resolvers = {
@@ -19,10 +23,14 @@ export const resolvers = {
     getClient,
     allCarts,
     allComments,
-    allTasks
+    allTasks,
+    getTask
   },
   Mutation: {
     createClient,
-    deleteClient
+    deleteClient,
+    createTask,
+    deleteTask,
+    updateTask
   }
 }
